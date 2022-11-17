@@ -1,0 +1,42 @@
+<div class="title-div">
+  <h2>My Grocery List</h2>
+  <div *ngIf="items.length > 0">
+    <span>{{items.length}} items</span>
+  </div> 
+</div>
+
+<div class="search-container col d-flex justify-content-center">
+  <div class="card">
+    <div class="card-body">
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" 
+      placeholder="Add Item" [(ngModel)] = "item.name" >
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" 
+        (click)="onClick()">
+          <i class="bi bi-bag-check"></i>
+        </button>
+      </div>
+    </div>
+
+    <div>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let itm of items">
+          <span>{{itm.name}}</span>
+          <span class="spn-del" (click)="onDelete(itm)">
+            <i class="bi bi-trash"></i>
+          </span>
+          <span class="spn-chk ng-hide" (click) = "onCheck(itm)">
+            <i class="bi bi-check2-square" *ngIf="itm.check"></i>
+            <i class="bi bi-check-square" *ngIf="!itm.check"></i>
+          </span>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+

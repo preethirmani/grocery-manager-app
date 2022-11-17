@@ -1,0 +1,44 @@
+.navbar-brand .navbar {
+  align-items: center;
+  justify-content: center;
+}
+.title-div{
+  text-align: center;
+  margin: 40px;
+}
+
+.search-input {
+  width: 250px;
+  height: 40px;
+  align-items: center;
+  align-content: center;
+}
+
+.btn-div {
+  display: inline;
+}
+.card {
+  align-self: center;
+  width: 70vh;
+ padding: 8px;
+}
+
+.search-container {
+  padding: 8px;
+}
+
+.spn-chk {
+  float: right;
+  cursor: pointer;
+}
+
+.bi-check2-square {
+
+  height: 12px;
+  width: 12px;
+}
+
+.spn-del {
+  float: right;
+  cursor: pointer;
+}
