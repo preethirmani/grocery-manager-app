@@ -42,3 +42,23 @@
   float: right;
   cursor: pointer;
 }
+
+.h2-title {
+  color: aliceblue;
+ 
+  
+}
+
+.navbar {
+  height: 10vh;
+  padding: 10px;
+  background-color: #0862a2;
+}
+
+.h2-grocerylist {
+  color: #0862a2;
+}
+
+i {
+ font-size: 24px;
+}

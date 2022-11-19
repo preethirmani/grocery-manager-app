@@ -1,5 +1,10 @@
+<div>
+  <nav class="navbar navbar-light">
+    <h2 class="h2-title">Grocery Manager</h2>
+  </nav>
+</div>
 <div class="title-div">
-  <h2>My Grocery List</h2>
+  <h2 class="h2-grocerylist">My Grocery List</h2>
   <div *ngIf="items.length > 0">
     <span>{{items.length}} items</span>
   </div> 
@@ -26,10 +31,11 @@
           <span class="spn-del" (click)="onDelete(itm)">
             <i class="bi bi-trash"></i>
           </span>
-          <span class="spn-chk ng-hide" (click) = "onCheck(itm)">
-            <i class="bi bi-check2-square" *ngIf="itm.check"></i>
-            <i class="bi bi-check-square" *ngIf="!itm.check"></i>
+          <span class="spn-chk ng-hide" (click)="onCheck(itm)">
+            <i class="bi bi-bag-check-fill bi-lg" *ngIf="itm.check"></i>
+            <i class="bi bi-bag-check " *ngIf="!itm.check"></i>
           </span>
+          
         </li>
       </ul>
     </div>

@@ -10,6 +10,7 @@ export class GroceryComponent implements OnInit {
     id : 0,
     name : '',
     check : false
+  
    
   };
  // item = '';
@@ -47,9 +48,11 @@ export class GroceryComponent implements OnInit {
     console.log(this.items);
   }
 
-  onCheck(item: any) {
+
+ onCheck(item: any) {
     const indx = this.items.indexOf(item);
     this.items[indx].check = true;
     
   }
+
 }
