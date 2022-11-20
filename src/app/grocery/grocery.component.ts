@@ -34,7 +34,7 @@ export class GroceryComponent implements OnInit {
       strike: false
     }
     
-    console.log('item obj cleared');
+    
     console.log('this.item.id:'+this.item.id);
     console.log('this.item.name:'+this.item.name);
   }
