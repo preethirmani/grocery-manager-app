@@ -4,14 +4,24 @@
 }
 .title-div{
   text-align: center;
-  margin: 40px;
+  border-style: solid;
+  height: 60px;
+ 
 }
 
-.search-input {
-  width: 250px;
-  height: 40px;
-  align-items: center;
-  align-content: center;
+.h2-grocerylist {
+  color: #0862a2;
+  margin-top: 8px;
+  display: block;
+  font-weight: bold;
+  font-size: large;
+  margin-bottom: 3px;
+}
+
+.spn-title {
+  margin-top: 0px;
+  padding-top: 0px;
+
 }
 
 .btn-div {
@@ -23,9 +33,7 @@
  padding: 8px;
 }
 
-.search-container {
-  padding: 8px;
-}
+
 
 .spn-chk {
   float: right;
@@ -43,10 +51,14 @@
   cursor: pointer;
 }
 
+.spn-fill{
+  float:right;
+  cursor: pointer;
+}
+
 .h2-title {
   color: aliceblue;
- 
-  
+
 }
 
 .navbar {
@@ -55,10 +67,21 @@
   background-color: #0862a2;
 }
 
-.h2-grocerylist {
-  color: #0862a2;
-}
+
 
 i {
  font-size: 24px;
+}
+
+.strike {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+
+}
+
+.card {
+  height: 60vh;
+  border-color: #0862a2;
+  
 }

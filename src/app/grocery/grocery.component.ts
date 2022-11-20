@@ -9,15 +9,10 @@ export class GroceryComponent implements OnInit {
  item = {
     id : 0,
     name : '',
-    check : false
-  
-   
+    check : false,
+    strike: false   
   };
- // item = '';
-
    items: any[] = [];
-
-   
 
   constructor() { }
 
@@ -25,16 +20,18 @@ export class GroceryComponent implements OnInit {
   }
    
   onClick() {
-   
-    this.item.id = new Date().getTime();
-    this.item.check = false;
-    this.items.push(this.item);
-
+    if(this.item.id === 0) {
+      this.item.id = new Date().getTime();
+      this.item.check = false;
+      this.item.strike = false;
+      this.items.push(this.item);
+    }
     //clearing item object 
    this.item = {
       id : 0,
       name : '',
-      check : false
+      check : false,
+      strike: false
     }
     
     console.log('item obj cleared');
@@ -51,7 +48,23 @@ export class GroceryComponent implements OnInit {
 
  onCheck(item: any) {
     const indx = this.items.indexOf(item);
-    this.items[indx].check = true;
+    this.items[indx].check = true;  
+  }
+
+  onStrike(item: any){
+    console.log('onStrike')
+    var index = this.items.indexOf(item);
+      if(this.items[index].strike){
+        this.items[index].strike = false;
+      }
+      else{
+        this.items[index].strike = true;
+      }
+     }
+
+    onEdit(item: any) {
+      this.item = item
+      
     
   }
 
